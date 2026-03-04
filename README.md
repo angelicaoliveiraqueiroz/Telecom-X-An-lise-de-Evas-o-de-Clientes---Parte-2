@@ -1,60 +1,65 @@
-# 📊 **Telecom X: Análise de Evasão de Clientes - Parte 2**
-## 📌 Sobre o Projeto
-Esse projeto é a parte 2 do projeto TelecomX e visa colocar em prática os conhecimentos adquiridos em análise de dados e machine learning para fazer uma previsão da evasão de clientes da empresa fictícia TelecomX
+🎯 Objetivo
 
-A partir da análise, buscamos insights para compreender os fatores que influenciam de forma positiva ou negativa na evasão dos clientes, explorando os modelos de aprendizado de máquinas que se adequem melhor à previsão categórica.
+Desenvolver e avaliar modelos de Aprendizagem Automática capazes de estimar a probabilidade de evasão de clientes da TelecomX, recorrendo a dados previamente tratados e estruturados, com vista à identificação de fatores determinantes e à otimização da capacidade preditiva.
 
-A base de dados contém informações de clientes, como tempo de contrato, tipo de contrato, formas de pagamento, planos, contratos adicionais entre outras categorias que servirão como variáveis para a análise.
+🧰 Tecnologias e Bibliotecas Utilizadas
 
-## 🎯 Objetivo
-Explorar modelos de Machine Learning e desenvolver modelos capazes de prever quais clientes têm maior chance de cancelar seus serviços na empresa fictícia TelecomX com os dados previamente tratados.
+Python – Linguagem de programação adotada para o desenvolvimento integral do projeto.
 
-## 🧰 Tecnologias e Bibliotecas Utilizadas
+Jupyter Notebook – Ambiente computacional interativo utilizado para implementação, documentação e apresentação dos resultados.
 
-* ![Python](https://img.shields.io/badge/Python-Programming-blue) **Linguagem de Programação:** Utilizada para todo o desenvolvimento do projeto.
-* ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange) **Ambiente de Desenvolvimento:** Usado para escrever, executar e documentar o código de forma interativa.
-* ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-green) **Manipulação de Dados:** Utilizada para leitura e tratamento do dataframe.
-* ![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-lightblue) **Suporte Matemático:** Usada para operações matemáticas e numéricas.
-* ![Matplotlib](https://img.shields.io/badge/Matplotlib-Data%20Visualization-red) **Visualização de Dados:** Criação de gráficos personalizados.
-* ![Seaborn](https://img.shields.io/badge/Seaborn-Statistical%20Plots-purple) **Análise Estatística:** Utilizada para gerar o Heatmap de correlação e gráficos estatísticos.
-* ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-Machine%20Learning-yellow) **Machine Learning:** Usada para construção e avaliação de modelos preditivos.
+Pandas – Biblioteca destinada à manipulação, transformação e análise de dados estruturados.
 
-## 📂 Estrutura do Projeto
+NumPy – Ferramenta de suporte a operações matemáticas e computação numérica.
 
-**README.md**: Arquivo com descrição do projeto.
+Matplotlib – Biblioteca para visualização gráfica e representação de dados.
 
-**TelecomX-parte2.ipynb**: Notebook contendo todas as células de execução do projeto e relatório final.
+Seaborn – Utilizada para análise estatística exploratória e construção de matrizes de correlação (heatmaps).
 
-**dados_tratados.csv**: Base de dados tratada na parte 1 do projeto. 
+Scikit-learn – Framework aplicada na implementação, validação e comparação de modelos de classificação.
 
-## 🔄 Pipeline do Projeto
+📂 Estrutura do Projeto
 
-O projeto foi estruturado em etapas sequenciais, formando um fluxo de trabalho claro:
- 
-1. Preparação dos Dados:
-    * Extração do Arquivo Tratado: Extrair o arquivo CSV previamente tratado
-    * Remoção de Colunas Irrelevantes: Eliminar colunas que não trazem valor para a análise
-    * Encoding: Transformar variáveis categóricas em numéricas para torná-las compatíveis com algoritmos de machine learning, com o método One-Hot Encoding.
-    * Verificação da Proporção de Evasão: Calcular a proporção de clientes que evadiram em relação aos que permaneceram ativos
-2. Correlação e Seleção de Variáveis:
-    * Visualizar a matriz de correlação para identificar relações entre variáveis numéricas
-    * Análises Direcionadas: Investigar como variáveis específicas se relacionam com a evasão, gerando gráficos como boxplot ou de dispersão (scatter plots)
-3. Modelagem Preditiva:
-    * Separação de Dados: Dividir dados em treino e teste para avaliar o desempenho do modelo
-    * Criação de Modelos: Criar modelos diferentes para prever a evasão dos clientes
-    * Avaliação dos Modelos: Avalie cada modelo utilizando métricas de acurácia precisão, recall, f1-score e matriz de confusão. Em seguida fazer uma análise crítica e comparar os modelos, verificar também modelos com Overfitting ou Underfitting
-4. Análise de Importância das Variáveis:
-    * Análise das variáveis mais relevantes para a previsão de evasão
-    * Conclusão: Fazer relatório detalhado destacando os fatores que mais influenciam a evasão, com base nas variáveis selecionadas e no desempenho de cada modelo.
+README.md – Documento descritivo contendo o enquadramento, objetivos e metodologia adotada.
 
-## 🚀 Como Executar o Projeto
+TelecomX-parte2.ipynb – Notebook com a implementação integral do processo analítico e relatório técnico final.
 
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/marcosamcorreia/Desafio-TelecomX-parte2
+dados_tratados.csv – Conjunto de dados previamente preparado na fase anterior do projeto.
 
-2. Abra o arquivo 'TelecomX-parte2.ipynb', pelo Google Collab ou como preferir
-3. Altere o caminho do arquivo caso necessário 'dados = pd.read_csv('/CAMINHO/dados_tratados.csv')'
-4. Execute todas as células
-5. Leia o relatório final no final do projeto
+🔄 Metodologia e Etapas do Desenvolvimento
 
+O projeto foi estruturado segundo um fluxo metodológico sequencial, conforme descrito abaixo:
+
+1️⃣ Preparação e Tratamento dos Dados
+
+Importação do ficheiro CSV previamente processado.
+
+Exclusão de variáveis consideradas irrelevantes ou redundantes.
+
+Codificação de variáveis categóricas através do método One-Hot Encoding, garantindo compatibilidade com algoritmos de classificação.
+
+Análise da distribuição da variável-alvo, com verificação da proporção entre clientes ativos e clientes que cancelaram o serviço.
+
+2️⃣ Análise Exploratória e Seleção de Variáveis
+
+Construção e interpretação da matriz de correlação entre variáveis numéricas.
+
+Realização de análises exploratórias direcionadas, recorrendo a representações gráficas como boxplots e gráficos de dispersão, com o intuito de compreender a relação entre variáveis independentes e a evasão.
+
+3️⃣ Modelação Preditiva
+
+Divisão do conjunto de dados em subconjuntos de treino e teste.
+
+Implementação de diferentes algoritmos de classificação.
+
+Avaliação comparativa com base em métricas como acurácia, precisão, recall, F1-score e matriz de confusão.
+
+Análise crítica do desempenho dos modelos, incluindo verificação de fenómenos de overfitting e underfitting.
+
+4️⃣ Análise da Importância das Variáveis
+
+Identificação e interpretação das variáveis com maior contributo para a previsão da evasão.
+
+5️⃣ Conclusão
+
+Elaboração de um relatório final com discussão fundamentada dos resultados obtidos, destacando os fatores com maior impacto na evasão e o modelo com melhor desempenho preditivo.
